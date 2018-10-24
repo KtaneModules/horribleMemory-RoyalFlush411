@@ -371,6 +371,8 @@ GameObject:
   - component: {fileID: 114449325371559692}
   - component: {fileID: 114948544826767402}
   - component: {fileID: 114575261675174806}
+  - component: {fileID: 114332029808070432}
+  - component: {fileID: 114331015702284328}
   m_Layer: 0
   m_Name: horribleMemory
   m_TagString: Untagged
@@ -2991,6 +2993,30 @@ MonoBehaviour:
   colourName: 
   position: 4
   labelName: 0
+--- !u!114 &114331015702284328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1527849116778770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ed6473c797abd4aab190eba5ef60ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colorblindMode: 0
+--- !u!114 &114332029808070432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1527849116778770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde2b81f58759dd4899ac2aacebd03f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _seed: 1
 --- !u!114 &114373625330138562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3175,6 +3201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bomb: {fileID: 114073190091920470}
   Audio: {fileID: 114449325371559692}
+  RuleSeedable: {fileID: 114332029808070432}
+  ColorblindMode: {fileID: 114331015702284328}
   screenDisplay: {fileID: 102573398392871580}
   buttonMaterialOptions:
   - {fileID: 2100000, guid: 7b0100fe77b714e9cb49d78a5f16496c, type: 2}
