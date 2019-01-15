@@ -585,11 +585,11 @@ public class cruelMemoryScript : MonoBehaviour
             return new KMSelectable[0];
         }
 
-        var match = Regex.Match(command, @"^\s*(?:p|pos|position)\s+([1-6])\s*", RegexOptions.IgnoreCase);
+        var match = Regex.Match(command, @"^\s*(?:p|pos|position)\s+([1-6])\s*$", RegexOptions.IgnoreCase);
         if (match.Success)
             return new[] { buttons[int.Parse(match.Groups[1].Value) - 1].selectable };
 
-        match = Regex.Match(command, @"^\s*(?:c|col|color|colour)\s+(b|blue|g|green|r|red|o|orange|p|purple|i|pink)\s*", RegexOptions.IgnoreCase);
+        match = Regex.Match(command, @"^\s*(?:c|col|color|colour)\s+(b|blue|g|green|r|red|o|orange|p|purple|i|pink)\s*$", RegexOptions.IgnoreCase);
         if (match.Success)
         {
             var color = match.Groups[1].Value;
@@ -605,7 +605,7 @@ public class cruelMemoryScript : MonoBehaviour
             return new[] { buttons.First(b => b.colourName == color).selectable };
         }
 
-        match = Regex.Match(command, @"^\s*(?:l|lab|label)\s+([1-6])\s*", RegexOptions.IgnoreCase);
+        match = Regex.Match(command, @"^\s*(?:l|lab|label)\s+([1-6])\s*$", RegexOptions.IgnoreCase);
         if (match.Success)
             return new[] { buttons.First(b => b.labelName == int.Parse(match.Groups[1].Value)).selectable };
 
