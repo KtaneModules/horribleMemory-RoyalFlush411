@@ -64,6 +64,7 @@ public class cruelMemoryScript : MonoBehaviour
         stageLights[0].material = stageLightOptions[1];
 
         var rnd = RuleSeedable.GetRNG();
+        Debug.LogFormat("[Horrible Memory #{0}] Using rule seed: {1}", moduleId, rnd.Seed);
         if (rnd.Seed == 1)
             rules = null;
         else
