@@ -13,10 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: horribleMemory
   title: Horrible Memory
-  description: "Horrible Memory 1.12\nI thought Memory only went up to 4? Geez, I
+  description: "Horrible Memory 1.13\nI thought Memory only went up to 4? Geez, I
     can\u2019t remember anything these days\u2026\n\nModule ID: horribleMemory\n\nCreated
     by: Royal_Flu$h\nTwitchPlays implemented by: Timwi\nIdeas given by: NikoWasHere
     & Timwi\n\nThanks to Timwi for the manual image.\n\nManual available here: https://ktane.timwi.de/HTML/Horrible%20Memory.html"
-  version: 1.12
+  version: 1.13
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 7e8884707228243d0b356cd20c18659f, type: 3}
