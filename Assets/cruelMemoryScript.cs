@@ -593,7 +593,7 @@ public class cruelMemoryScript : MonoBehaviour
         match = Regex.Match(command, @"^\s*(?:c|col|color|colour)\s+(b|blue|g|green|r|red|o|orange|p|purple|i|pink)\s*$", RegexOptions.IgnoreCase);
         if (match.Success)
         {
-            var color = match.Groups[1].Value;
+            var color = match.Groups[1].Value.ToLowerInvariant();
             switch (color)
             {
                 case "b": color = "blue"; break;
